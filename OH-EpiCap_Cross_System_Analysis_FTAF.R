@@ -118,10 +118,11 @@ radar_plot <- function(indicators, num_sections, show_min_max, section_cols,
 }
 
 # ---- Plots the OH EpiCap Score for each system
-OH_score_plot <- function(targets, bar_cols, SVG_name){
-  # indicators: The indicators (questionnaire answers) to plot.
-  # bar_cols:   The colours of the barplot.
-  # SVG_name:   The file name to call the svg image.
+OH_score_plot <- function(targets, bar_cols, isLongitudinalStudy, SVG_name){
+  # indicators:          The indicators (questionnaire answers) to plot.
+  # bar_cols:            The colours of the barplot.
+  # isLongitudinalStudy: Draw lines betwenn OH-EpiCap scores if study is over time.
+  # SVG_name:            The file name to call the svg image.
   
   OH_EpiCap_Index <- (colMeans(targets[,-(1:2)], na.rm = TRUE) - 1)*100/3
   OH_EpiCap_Dim_Index <- do.call(rbind, lapply(
@@ -146,13 +147,16 @@ OH_score_plot <- function(targets, bar_cols, SVG_name){
   barplot(
     grouped_OH_EpiCap_Data, beside = TRUE, border = bar_cols, col = faded_bar_cols,
     names.arg = colnames(grouped_OH_EpiCap_Data), ylim = c(0, 100), cex.names = 0.8,
-    ylab = "OneHealth-EpiCap Score (%)", xlab = "Epidemiological System"
+    ylab = "OneHealth-EpiCap Score (%)", xlab = "Epidemiological System", space = c(0.05, 1)
   )
   # Find the coordinates of the OH-EpiCap Index (green bar). We have a space
   # between each group of bars (number of groups - 1), with num_dims + 1 bars
-  # in each group. We then center the lines by adding 0.5.
-  bar_coords <- 0.5 + seq(from = num_dims + 1, to = (num_systems - 1) + (1 + num_dims)*num_systems, by = num_dims + 2)
-  lines(x = bar_coords, y = grouped_OH_EpiCap_Data[num_dims + 1,], col = bar_cols[num_dims + 1], lwd = 2)
+  # in each group. We then center the lines by adding 0.5. Using this, we can
+  # draw lines between systems (in the case of a longitudinal study)
+  if(isLongitudinalStudy){
+    bar_coords <- 0.5 + seq(from = num_dims + 1, to = (num_systems - 1) + (1 + num_dims)*num_systems, by = num_dims + 2)
+    lines(x = bar_coords, y = grouped_OH_EpiCap_Data[num_dims + 1,], col = bar_cols[num_dims + 1], lwd = 2)
+  }
   legend(
     "topright",
     legend = c(paste("Dimension", 1:num_dims, "Score"), "OH-EpiCap Score"),
@@ -217,7 +221,8 @@ radar_plot(indicators = OHEC_data[33:48,], num_sections = 4, show_min_max = FALS
            radial_labels = OHEC_data$Dimension_Label[33:48], SVG_name = "Indicators_Dimension_3_Radar")
 
 # Plot the OH-EpiCap Scores across all the systems
-OH_score_plot(targets = OHEC_target, bar_cols = OH_cols, SVG_name = "EpiCap_Scores")
+OH_score_plot(targets = OHEC_target, bar_cols = OH_cols,
+              isLongitudinalStudy = FALSE, SVG_name = "EpiCap_Scores")
 
 
 # ============================================================================ #
