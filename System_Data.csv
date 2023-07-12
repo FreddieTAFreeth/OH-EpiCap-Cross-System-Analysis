@@ -1,0 +1,49 @@
+"Dimension_Number","Dimension_Label","System 1","System 2","System 3","System 4","System 5","System 6","System 7","System 8","System 9","System 10","System 11"
+"1.1.1","Common aim",1,1,2,3,3,3,1,4,3,3,4
+"1.1.2","Supporting documentations ",1,1,2,2,2,2,2,2,3,2,4
+"1.1.3","Shared leadership",1,1,1,1,1,3,2,1,3,4,4
+"1.1.4","Coordination",1,1,1,1,1,2,3,3,3,4,4
+"1.2.1","Sectors ",3,3,4,3,3,3,4,3,4,4,3
+"1.2.2","Disciplines ",3,3,3,2,3,3,3,3,3,4,4
+"1.2.3","Actors",2,2,3,2,4,3,3,4,4,3,4
+"1.2.4","Geographic, populations, hazards",2,2,4,2,3,1,2,4,4,4,3
+"1.3.1","Budget ",3,3,1,1,2,3,3,2,2,4,4
+"1.3.2","Human resources",2,2,2,2,2,3,2,2,2,4,4
+"1.3.3","Shared ressources",3,3,2,3,3,2,1,3,3,3,4
+"1.3.4","Training",1,1,1,2,2,2,2,4,4,3,4
+"1.4.1","Internal evaluation",1,1,2,1,2,3,3,3,1,4,4
+"1.4.2","External evaluation",1,1,1,2,1,3,2,4,3,NA,4
+"1.4.3","Corrective measures",NA,NA,NA,2,NA,2,3,3,2,NA,4
+"1.4.4","Adaptability to changes ",4,4,2,3,NA,4,3,4,2,4,3
+"2.1.1","Protocol design",1,1,3,2,3,1,2,3,4,3,3
+"2.1.2","Data collection",1,1,3,2,3,2,2,3,4,1,4
+"2.1.3","Laboratory techniques",1,1,3,3,3,2,3,3,3,3,1
+"2.1.4 ","Data warehouse",2,2,2,3,3,1,2,1,4,2,3
+"2.2.1","Sharing agreement",1,1,2,3,3,1,2,1,4,3,3
+"2.2.2","Data quality ",3,3,3,2,2,3,2,2,2,2,4
+"2.2.3 ","Usefulness",3,3,2,2,3,3,3,2,4,3,4
+"2.2.4"," FAIR data",1,1,2,1,1,2,3,1,2,3,4
+"2.3.1","Joint analysis ",2,2,3,2,1,2,3,1,4,3,3
+"2.3.2"," Sharing techniques ",1,1,NA,2,1,2,1,1,2,2,4
+"2.3.3"," Sharing expertise",3,3,3,3,2,2,3,3,4,4,4
+"2.3.4","Indicators",1,1,3,2,2,3,1,1,2,3,3
+"2.4.1","Internal communication",3,3,2,2,3,1,4,3,4,2,3
+"2.4.2","External communication",3,3,3,3,3,4,4,3,4,2,3
+"2.4.3"," Dissemination",2,2,1,2,3,3,2,2,4,3,3
+"2.4.4","Emergence",3,3,1,3,2,3,3,3,3,4,4
+"3.1.1","Emergence detection",3,3,1,3,3,1,2,3,2,4,4
+"3.1.2"," Improved knowledge",3,3,3,2,3,1,3,3,4,4,4
+"3.1.3","Effectiveness",1,1,NA,1,1,1,1,1,1,4,4
+"3.1.4","Operational cost",1,1,NA,1,1,1,1,1,1,1,NA
+"3.2.1","OH team",3,3,3,2,1,1,3,1,3,4,3
+"3.2.2","OH network",1,1,3,2,1,1,3,1,4,4,4
+"3.2.3","International",2,2,2,3,3,1,2,3,4,2,2
+"3.2.4","Strategy",1,1,1,3,1,4,1,4,4,1,4
+"3.3.1","Preparedness",4,4,3,3,3,2,3,NA,3,4,4
+"3.3.2","Interventions ",1,1,2,1,2,3,2,NA,3,3,3
+"3.3.3","Advocacy",4,4,2,3,1,3,2,NA,3,3,4
+"3.3.4","Awareness",2,2,2,2,2,2,3,NA,3,3,4
+"3.4.1","Research",3,3,1,3,3,3,3,NA,3,3,3
+"3.4.2","Policy changes",1,1,1,2,2,4,3,NA,3,3,4
+"3.4.3","Behavioral changes",NA,NA,1,1,2,3,1,NA,3,1,3
+"3.4.4","Health outcome",1,1,1,1,1,3,1,NA,2,3,4
