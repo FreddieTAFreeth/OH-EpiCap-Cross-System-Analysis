@@ -1,9 +1,16 @@
 # OH-EpiCap Cross-System Analysis
-Evaluating epidemiological systems under the OneHealth criterion, following the work of the OH-EpiCap Tool. This repository contains the code and data that generates the figures seen in the paper ```<publication name>``` by ```<author list>```.
+Evaluating epidemiological systems under the OneHealth criterion, following the work of the OH-EpiCap Tool. This repository contains the code and data that generates the figures seen in the paper ```<publication name>``` by ```<author list>```. The OH-EpiCap Tool was developed published in Frontiers: Tegegne, H. A., Bogaardt, C., Collineau, L., Cazeau, G., Lailler, R., Reinhardt, J., **Freeth, F. T.**, Taylor, E., Prada, J. M., &amp; Hénaux, V. (2023). OH-EpiCap: A semi-quantitative tool for the evaluation of one health epidemiological surveillance capacities and capabilities. Frontiers in Public Health, 11. https://doi.org/10.3389/fpubh.2023.1053986 
 
 ## How-to Guide
+Creating your own radar plots with your own datasets is fast and easy. A dataset with ```N``` epidemiological systems to be modelled under the OneHealth EpiCap system with this script should be a ```.csv``` file with the following columns: ```Dimension_Number```,	```Dimension_Label```,	```System 1```,	```System 2```, ..., ```System N```. The columns ```Dimension_Number``` and	```Dimension_Label``` should have the numbers and labels as seen in the OH-EpiCap tool, and the system scores should be scored with one of the following values: ```1```, ```2```, ```3```, ```4```, or ```NA```.
 
 ## Figures
+- ```EpiCap_Scores.svg``` is a barplot of the overall OH-EpiCap score along with the scores at the dimension level. 
+- ```Indicators_All_Radar.svg``` is a plot of all the indicators across all dimensions.
+- ```Indicators_Dimension_1_Radar.svg``` is a plot of the four targets in dimension 1.
+- ```Indicators_Dimension_2_Radar.svg``` is a plot of the four targets in dimension 2.
+- ```Indicators_Dimension_3_Radar.svg``` is a plot of the four targets in dimension 3.
+- ```Indicators_Target_Radar.svg``` is a plot of all all dimensions at the target level.
 
 ## Session Info
 The R version and packages used are given below:
