@@ -138,7 +138,7 @@ OH_score_plot <- function(targets, bar_cols, isLongitudinalStudy, SVG_name){
   
   # Make dimension bar colours lighter and keep the overall EpiCap score the same.
   # This is needed in case you want to make the overall score stand out more.
-  dim_bar_opacity <- 0.1
+  dim_bar_opacity <- 0.4
   faded_bar_cols <- ggplot2::alpha(colour = bar_cols, alpha = c(rep(dim_bar_opacity, num_dims), 1))
   
   plot.new()
