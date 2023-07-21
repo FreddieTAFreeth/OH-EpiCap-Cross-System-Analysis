@@ -1,6 +1,6 @@
 #!/usr/bin/env Rscript
 # ============================================================================ #
-# OH-EpiCap Cross-System Analysis - Frederick T. A. Freeth          12/07/2023 |
+# OH-EpiCap Cross-System Analysis - Frederick T. A. Freeth          21/07/2023 |
 # ============================================================================ #
 
 # ---- Preamble ----
@@ -193,6 +193,7 @@ OHEC_target <- as.data.frame(cbind(
 # As we added in character types to OHEC_target, this mutates all the numeric
 # types to become characters also so we need to change them back
 OHEC_target[,-(1:2)] <- apply(OHEC_target[,-(1:2)], MARGIN = 2, FUN = as.numeric)
+
 
 # ---- Produce the Radar Plots ----
 # All indicators on one plot
